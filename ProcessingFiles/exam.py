@@ -129,3 +129,86 @@ print(t)
  
 my_list = [1, 2, 3, 4]
 print(my_list[-3:-2])
+
+
+
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+ 
+for item in (d1, d2):
+    print(item)
+
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+
+colors_dictionary = dict(colors)
+print(colors_dictionary)
+
+
+my_list = [1, 2]
+ 
+for v in range(2):
+    my_list.insert(-1, my_list[v])
+ 
+print(my_list)
+
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[:]
+print(new_list)
+new_list = my_list[1:]
+print(new_list)
+new_list = my_list[1::]
+print(new_list)
+new_list = my_list[:-1]
+print(new_list)
+new_list = my_list[::-1]
+print(new_list)
+
+
+s1 = 'Where are the snows of yesteryear?'
+s2 = s1.split()
+s3 = sorted(s2)
+print(s3[1])
+
+
+i = 250
+while len(str(i)) > 72:
+    i *= 2
+else:
+    i //=2
+print(i)
+ 
+
+lst = [[c for c in range(r)] for r in range(3)]
+print(lst)
+
+
+from random import randint
+for i in range(10):
+    print(randint(1,5))
+
+
+
+
+x = 5 
+f = lambda x:1+2
+print(f(x))
+
+x = 5//2
+func = lambda x:+3
+print(func(x))
+
+my_l = [[i+j for i in range(1,5,1)] for j in range(-1,6,3)]
+print(my_l)
+
+
+def myfunc(n):
+    res = ord('A')
+    for i in range(0,n,2):
+        yield chr(res)
+        res+=2
+ 
+y = [x for x in myfunc(10)]
+ 
+print(y)
